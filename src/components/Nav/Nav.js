@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import './Nav.css';
 
-export default class Nav extends Component {
+class Nav extends Component {
   render() {
     return (
-      <nav>
-        Navbar goes here
+      <nav role='navigation'>
+        <ul>
+          <li>Home</li>
+          <li>Blog</li>
+          <li>Shop</li>
+        </ul>
       </nav>
     )
   }
 }
+
+export default Nav;

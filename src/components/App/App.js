@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer';
 import HomePage from '../../routes/HomePage/HomePage';
 import StorePage from '../../routes/StorePage/StorePage';
 import BlogPage from '../../routes/BlogPage/BlogPage';
+import PostPage from '../../routes/PostPage/PostPage';
 import './App.css'
 
 class App extends Component {
@@ -29,8 +30,13 @@ class App extends Component {
             component={StorePage}
           />
           <Route 
+            exact
             path={'/blog'}
             component={BlogPage}
+          />
+          <Route 
+            path={'/blog/:post_id'}
+            component={PostPage}
           />
         </Switch>
         <Footer />
