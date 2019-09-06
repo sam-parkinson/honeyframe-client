@@ -1,30 +1,30 @@
 import React, { Component } from 'react';
+import BlogContext from '../../contexts/BlogContext';
+import SortBar from '../../components/SortBar/SortBar';
 
 export default class BlogPage extends Component {
+  static contextType = BlogContext;
+
+  renderBlog() {
+    const { blogPosts = [] } = this.context;
+    return blogPosts.map((post, index) =>
+      <li
+        key={index}
+      >
+        <h3>{post.title}</h3>
+        <span>{post.preview}</span>
+      </li>
+    )
+  }
+
   render() {
     return (
       <main>
         <h2>Blog Header</h2>
-        <section>
-          <form>
-            <label htmlFor="filter">Filter</label>
-            <select id="filter">
-              <option>Filter option</option>
-              <option>Filter option</option>
-            </select>
-            <label htmlFor="sort">Sort</label>
-            <select id="sort">
-              <option>Sort option</option>
-              <option>Sort option</option>
-            </select>
-            <button>Filter</button>
-          </form>
-        </section>
+        <SortBar />
         <section>  
           <ul>
-            <li>Post name and info</li>
-            <li>Post name and info</li>
-            <li>Post name and info</li>
+            {this.renderBlog()}
           </ul>
         </section>
       </main>
