@@ -4,10 +4,8 @@ import './Footer.css';
 export default class Footer extends Component {
   render() {
     return (
-      <footer>
-        <section>
-          <span>Contact info goes here</span>
-        </section>
+      <footer>      
+        <span>Contact info goes here</span>      
       </footer>
     )
   }

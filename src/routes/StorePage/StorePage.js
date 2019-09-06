@@ -7,12 +7,12 @@ export default class StorePage extends Component {
         <h2>Store</h2>
         <section>
           <form>
-            <label for="filter">Filter</label>
+            <label htmlFor="filter">Filter</label>
             <select id="filter">
               <option>Filter option</option>
               <option>Filter option</option>
             </select>
-            <label for="sort">Sort</label>
+            <label htmlFor="sort">Sort</label>
             <select id="sort">
               <option>Sort option</option>
               <option>Sort option</option>

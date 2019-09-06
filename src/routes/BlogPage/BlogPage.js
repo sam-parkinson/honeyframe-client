@@ -7,12 +7,12 @@ export default class BlogPage extends Component {
         <h2>Blog Header</h2>
         <section>
           <form>
-            <label for="filter">Filter</label>
+            <label htmlFor="filter">Filter</label>
             <select id="filter">
               <option>Filter option</option>
               <option>Filter option</option>
             </select>
-            <label for="sort">Sort</label>
+            <label htmlFor="sort">Sort</label>
             <select id="sort">
               <option>Sort option</option>
               <option>Sort option</option>
