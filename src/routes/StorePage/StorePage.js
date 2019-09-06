@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StoreContext from '../../contexts/StoreContext';
+import SortBar from '../../components/SortBar/SortBar';
 
 export default class StorePage extends Component {
   static contextType = StoreContext;
@@ -20,23 +21,7 @@ export default class StorePage extends Component {
     return (
       <main>
         <h2>Store</h2>
-        <section>
-          <form>
-            <label htmlFor="filter">Filter</label>
-            <select id="filter">
-              <option>Filter option</option>
-              <option>Filter option</option>
-            </select>
-            <br />
-            <label htmlFor="sort">Sort</label>
-            <select id="sort">
-              <option>Sort option</option>
-              <option>Sort option</option>
-            </select>
-            <br />
-            <button>Filter</button>
-          </form>
-        </section>
+        <SortBar />
         <section>  
           <ul>
             {this.renderStore()}
