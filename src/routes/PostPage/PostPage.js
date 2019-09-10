@@ -21,7 +21,6 @@ export default class PostPage extends Component {
   }
 
   render() {
-
     return (
       <main>
         <h2>{this.state.post.title}</h2>
@@ -29,7 +28,11 @@ export default class PostPage extends Component {
           <p>
             {this.state.post.body}
           </p>
-          <button>Back</button>
+          <button
+            onClick={() => this.props.history.push('/blog')}
+          >
+            Back
+          </button>
         </section>
       </main>
     )
