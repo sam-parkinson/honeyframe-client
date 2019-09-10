@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import BlogContext from '../../contexts/BlogContext';
 import SortBar from '../../components/SortBar/SortBar';
 
@@ -12,7 +13,15 @@ export default class BlogPage extends Component {
         key={index}
       >
         <h3>{post.title}</h3>
-        <span>{post.preview}</span>
+        <p>
+          {post.preview}
+          {' '}
+          <Link
+            to={`/blog/${post.id}`}
+          >
+            (Read more)
+          </Link>
+        </p>
       </li>
     )
   }
