@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import BlogContext from '../../contexts/BlogContext';
 import SortBar from '../../components/SortBar/SortBar';
 
+/* 
+  TODO
+    refactor somewhat as about articles of interest rather than just blog posts?
+*/
+
 export default class BlogPage extends Component {
   static contextType = BlogContext;
 
@@ -17,7 +22,7 @@ export default class BlogPage extends Component {
           {post.preview}
           {' '}
           <Link
-            to={`/blog/${post.id}`}
+            to={`/news/${post.id}`}
           >
             (Read more)
           </Link>
@@ -29,7 +34,7 @@ export default class BlogPage extends Component {
   render() {
     return (
       <main>
-        <h2>Blog Header</h2>
+        <h2>News</h2>
         <SortBar />
         <section>  
           <ul>

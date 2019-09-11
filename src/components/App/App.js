@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import HomePage from '../../routes/HomePage/HomePage';
+import AboutPage from '../../routes/AboutPage/AboutPage';
 import StorePage from '../../routes/StorePage/StorePage';
 import BlogPage from '../../routes/BlogPage/BlogPage';
 import PostPage from '../../routes/PostPage/PostPage';
@@ -24,6 +25,10 @@ class App extends Component {
             exact
             path={'/'}
             component={HomePage}
+          />
+          <Route 
+            path={'/about'}
+            component={AboutPage}
           />
           <Route 
             path={'/store'}
