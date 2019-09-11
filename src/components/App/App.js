@@ -7,6 +7,7 @@ import AboutPage from '../../routes/AboutPage/AboutPage';
 import StorePage from '../../routes/StorePage/StorePage';
 import BlogPage from '../../routes/BlogPage/BlogPage';
 import PostPage from '../../routes/PostPage/PostPage';
+import ContactPage from '../../routes/ContactPage/ContactPage';
 import './App.css'
 
 class App extends Component {
@@ -42,6 +43,10 @@ class App extends Component {
           <Route 
             path={'/blog/:post_id'}
             component={PostPage}
+          />
+          <Route 
+            path={'/contact'}
+            component={ContactPage}
           />
         </Switch>
         <Footer />
