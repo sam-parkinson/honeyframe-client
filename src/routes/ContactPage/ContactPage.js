@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 /* Form does a POST request to the database? */
 
@@ -8,7 +9,7 @@ export default class ContactPage extends Component {
       <main>
         <h2>Contact Us!</h2>
         <section>
-          <p>This is where the form goes</p>
+          <ContactForm />
         </section>
       </main>
     )

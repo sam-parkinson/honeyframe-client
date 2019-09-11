@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-/*
-  TODO:
-    replace Home with About
-*/
-
 class Nav extends Component {
   render() {
     return (

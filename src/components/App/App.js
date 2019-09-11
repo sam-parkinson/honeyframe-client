@@ -37,11 +37,11 @@ class App extends Component {
           />
           <Route 
             exact
-            path={'/blog'}
+            path={'/news'}
             component={BlogPage}
           />
           <Route 
-            path={'/blog/:post_id'}
+            path={'/news/:post_id'}
             component={PostPage}
           />
           <Route 

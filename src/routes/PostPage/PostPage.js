@@ -29,7 +29,7 @@ export default class PostPage extends Component {
             {this.state.post.body}
           </p>
           <button
-            onClick={() => this.props.history.push('/blog')}
+            onClick={() => this.props.history.push('/news')}
           >
             Back
           </button>
