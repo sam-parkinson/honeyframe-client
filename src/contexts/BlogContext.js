@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { blog } from './store'
 
 const BlogContext = React.createContext({
   blogPosts: [],
