@@ -23,6 +23,10 @@ export class BlogProvider extends Component {
     this.setState({ blogPosts })
   }
 
+  setBlogPostViewed = blogPostViewed => {
+    this.setState({ blogPostViewed })
+  }
+
   setError = error => {
     this.setState({ error })
   }
@@ -34,10 +38,12 @@ export class BlogProvider extends Component {
   render() {
     const value = {
       blogPosts: this.state.blogPosts,
+      blogPostViewed: this.state.blogPostViewed,
       error: this.state.error,
       setError: this.setError,
       clearError: this.clearError,
-      setBlogPosts: this.setBlogPosts
+      setBlogPosts: this.setBlogPosts,
+      setBlogPostViewed: this.setBlogPostViewed
     }
 
     return (
