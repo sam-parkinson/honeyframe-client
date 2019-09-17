@@ -38,7 +38,7 @@ export default class BlogPage extends Component {
     return (
       <main>
         <h2>News</h2>
-        <SortBar />
+        {/* <SortBar /> */}
         <section>  
           <ul>
             {this.renderBlog()}

@@ -30,7 +30,7 @@ export default class StorePage extends Component {
     return (
       <main>
         <h2>Store</h2>
-        <SortBar />
+        {/* <SortBar /> */}
         <section>  
           <ul>
             {this.renderStore()}
