@@ -21,7 +21,7 @@ export default class StorePage extends Component {
       >
         <h3>{item.item_name}</h3>
         {item.item_desc && <p>{item.item_desc}</p>}
-        {item.date_harvested && <p>Harvest date: {item.date_harvested}</p>}
+        {item.date_harvested && <p>Harvest date: {new Date(item.date_harvested).toLocaleDateString()}</p>}
       </li>
     )
   }
