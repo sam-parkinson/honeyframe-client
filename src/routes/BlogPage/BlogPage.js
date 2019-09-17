@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import BlogContext from '../../contexts/BlogContext';
+import BlogApiService from '../../services/blog-api-service';
 import SortBar from '../../components/SortBar/SortBar';
-
-/* 
-  TODO
-    refactor somewhat as about articles of interest rather than just blog posts?
-*/
 
 export default class BlogPage extends Component {
   static contextType = BlogContext;
+
+  componentDidMount() {
+    this.context.clearError();
+    BlogApiService.getAllBlogPosts()
+      .then(this.context.setBlogPosts)
+      .catch(this.context.setError)
+  }
 
   renderBlog() {
     const { blogPosts = [] } = this.context;
