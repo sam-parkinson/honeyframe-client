@@ -6,7 +6,13 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>      
-        <span>Contact info goes here</span>
+        <ul className='footerInfo'>
+          <li>Bee Keeper</li>
+          <li>555 Generic Ave</li>
+          <li>Anytown, USA 24601</li>
+          <li>beekeeper@honeyframe.com</li>
+          <li>555-555-5555</li>
+        </ul>
         <br />
         <span>
           <Link

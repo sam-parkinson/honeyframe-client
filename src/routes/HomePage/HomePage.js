@@ -12,8 +12,12 @@ export default class HomePage extends Component {
         <h2>Welcome to Honeyframe!</h2>
         <section>
           <img src="https://picsum.photos/400/200" alt="Placeholder" />
-          <h3>Mission statement</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed enim ut sem viverra aliquet. Est ante in nibh mauris cursus. Aenean pharetra magna ac placerat vestibulum lectus mauris. Nulla aliquet enim tortor at auctor. Viverra tellus in hac habitasse platea. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. Sed adipiscing diam donec adipiscing tristique risus.</p>
+          <h3>Mission Statement</h3>
+          <p>
+            We are Anytown-based beekeepers with a passion for local honey and hand-crafted beeswax goods! 
+            We strive to make our town a more beautiful place by providing a home for nature’s pollinators to do their work, 
+            while providing you with delicious honey made from wild flowers as well as beeswax and raw comb!
+          </p>
         </section>
       </main>
     )

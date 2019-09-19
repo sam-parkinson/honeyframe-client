@@ -8,7 +8,12 @@ export default class AboutPage extends Component {
         <section>
           <img src="https://picsum.photos/400/200" alt="Placeholder" />
           <h3>History</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed enim ut sem viverra aliquet. Est ante in nibh mauris cursus. Aenean pharetra magna ac placerat vestibulum lectus mauris. Nulla aliquet enim tortor at auctor. Viverra tellus in hac habitasse platea. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. Sed adipiscing diam donec adipiscing tristique risus.</p>
+          <p>
+            We started keeping bees in the spring of 2018 as a hobby both to give us something to do and to help take care of the world around us. 
+            A year later, we discovered, our bees had produced a ton of honey! So, we started harvesting the natural, delicious stuff and jarring it. 
+            Now, we’d like to share it with you! Check out our store page to see what’s in stock! We have honey from various harvests, as well as beeswax products and raw comb. 
+            Honeys harvested at different times in the year have different flavor profiles, so if you’d like to to try a few we even offer sample packs!
+          </p>
         </section>
       </main>
     )

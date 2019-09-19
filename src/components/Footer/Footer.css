@@ -1,0 +1,11 @@
+.footerInfo {
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+}
+
+.footerInfo li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
