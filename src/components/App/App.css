@@ -4,6 +4,12 @@ header, footer {
   background-color: #bbbbbb;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 section {
   margin: 0;
   padding: 5%;
