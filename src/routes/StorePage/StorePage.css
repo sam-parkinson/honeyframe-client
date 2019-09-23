@@ -1,0 +1,21 @@
+.storeList {
+  display: flex;
+  flex-direction: column;
+}
+
+.storeList li {
+  display: block;
+}
+
+@media screen and (min-width: 680px) {
+  .storeList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .storeList li {
+    width: 320px;
+    height: 320px;
+  }
+}

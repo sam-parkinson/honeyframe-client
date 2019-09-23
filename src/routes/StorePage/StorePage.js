@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import StoreContext from '../../contexts/StoreContext';
 import StoreApiService from '../../services/store-api-service';
 import SortBar from '../../components/SortBar/SortBar';
+import './StorePage.css'
 
 export default class StorePage extends Component {
   static contextType = StoreContext;
@@ -33,7 +34,7 @@ export default class StorePage extends Component {
         <h2>Store</h2>
         {/* <SortBar /> */}
         <section>  
-          <ul>
+          <ul className='storeList'>
             {this.renderStore()}
           </ul>
         </section>
