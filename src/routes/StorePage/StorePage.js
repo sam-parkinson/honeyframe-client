@@ -20,6 +20,7 @@ export default class StorePage extends Component {
         key={index}
       >
         <h3>{item.item_name}</h3>
+        {item.img_url && <img src={item.img_url} alt={item.item_name} />}
         {item.item_desc && <p>{item.item_desc}</p>}
         {item.date_harvested && <p>Harvest date: {new Date(item.date_harvested).toLocaleDateString()}</p>}
       </li>
