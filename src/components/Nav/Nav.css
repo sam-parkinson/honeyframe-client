@@ -5,6 +5,22 @@ nav {
   align-items: center;
 }
 
-nav ul li {
+
+.navLink {
   display: inline-block;
+  border: 3px #3A4800 solid;
+  background-color: #C4F600;
+}
+
+.navLink:hover, .navLink:focus-within {
+  border: 3px #CFF929 solid;
+  background-color: #87AA00;
+}
+
+.navLink * {
+  color: #B12500;
+}
+
+.navLink *:visited {
+  color: #4B1000;
 }

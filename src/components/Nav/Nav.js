@@ -6,23 +6,33 @@ class Nav extends Component {
   render() {
     return (
       <nav role='navigation'>
-        <ul>
-          <li>
+        <ul
+          className='navList'
+        >
+          <li
+            className='navLink'
+          >
             <Link to={'/about'}>
               About
             </Link>
           </li>
-          <li>
+          <li
+            className='navLink'
+          >
             <Link to={'/news'}>
               News
             </Link>
           </li>
-          <li>
+          <li
+            className='navLink'
+          >
             <Link to={'/store'}>
               Shop
             </Link>
           </li>
-          <li>
+          <li
+            className='navLink'
+          >
             <Link to={'/contact'}>
               Contact
             </Link>

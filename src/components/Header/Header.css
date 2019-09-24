@@ -1,0 +1,12 @@
+header {
+  background-color: #FFBE00;
+  width: 100%;
+}
+
+h1 * {
+  color: #4B3800;
+}
+
+h1 *:hover {
+  color: #B12500;
+}
