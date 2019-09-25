@@ -128,9 +128,18 @@ class ContactForm extends Component {
 
   renderSubmitted() {
     return (
-      <p>
-        Thank you for submitting your comment!
-      </p>
+      <>
+        <p>
+          Thank you for submitting your comment!
+        </p>
+        <button
+          onClick={() =>
+            this.props.history.push('/')
+          }
+        >
+          Home
+        </button>
+      </>
     )
   }
 

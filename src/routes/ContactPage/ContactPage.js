@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import './ContactPage.css';
 
 export default class ContactPage extends Component {
   render () {
@@ -7,7 +8,9 @@ export default class ContactPage extends Component {
       <main>
         <h2>Contact Us!</h2>
         <section>
-          <ContactForm />
+          <ContactForm 
+            history={this.props.history}
+          />
         </section>
       </main>
     )

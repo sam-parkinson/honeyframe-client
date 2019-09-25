@@ -31,3 +31,14 @@ img {
 *:visited {
   color: #4B1000;
 }
+
+button {
+  border: 2px #3A4800 solid;
+  background-color: #C4F600;
+  color: #B12500;
+}
+
+button:hover, button:focus {
+  border: 2px #CFF929 solid;
+  background-color: #87AA00;
+}

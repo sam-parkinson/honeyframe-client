@@ -1,0 +1,7 @@
+input, textarea {
+  border: 2px #3A4800 solid;
+}
+
+input:focus, textarea:focus {
+  border: 2px #FF3500 solid;
+}
