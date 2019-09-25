@@ -7,6 +7,8 @@ nav {
 
 
 .navLink {
+  margin: 5px;
+  padding: 5px;
   display: inline-block;
   border: 3px #3A4800 solid;
   background-color: #C4F600;

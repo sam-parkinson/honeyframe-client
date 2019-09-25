@@ -5,6 +5,9 @@
 
 .storeList li {
   display: block;
+  margin: 5px;
+  padding: 5px;
+  border: 2px #3A4800 solid;
 }
 
 @media screen and (min-width: 680px) {

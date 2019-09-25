@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import BlogContext from '../../contexts/BlogContext';
 import BlogApiService from '../../services/blog-api-service';
 import SortBar from '../../components/SortBar/SortBar';
+import './BlogPage.css';
 
 export default class BlogPage extends Component {
   static contextType = BlogContext;
@@ -40,7 +41,7 @@ export default class BlogPage extends Component {
         <h2>News</h2>
         {/* <SortBar /> */}
         <section>  
-          <ul>
+          <ul className='blogList'>
             {this.renderBlog()}
           </ul>
         </section>

@@ -1,13 +1,15 @@
 .App {
   display: flex;
   flex-direction: column;
+  background-color: #FFD868;
+  color: #3A4800;
   min-height: 100vh;
 }
 
 section {
   margin: 0;
   padding: 5%;
-  border: 1px black solid;
+  padding-top: 0;
 }
 
 ul {
@@ -15,12 +17,14 @@ ul {
   padding: 0;
 }
 
-li {
-  margin: 5px;
-  padding: 5px;
-  border: 1px black solid;
-}
-
 img {
   max-width: 100%;
+}
+
+*:link {
+  color: #B12500;
+}
+
+*:visited {
+  color: #4B1000;
 }
