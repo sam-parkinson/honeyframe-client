@@ -13,7 +13,6 @@ export default class Footer extends Component {
           <li>beekeeper@honeyframe.com</li>
           <li>555-555-5555</li>
         </ul>
-        <br />
         <span>
           <Link
             to={'/contact'}
