@@ -5,6 +5,7 @@ class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      submitted: false,
       first_name: '',
       last_name: '',
       email: '',
@@ -14,6 +15,10 @@ class ContactForm extends Component {
   }
 
   state = { error: null }
+
+  componentWillUmount() {
+    this.setState({ submitted: false });
+  }
 
   handleFirstName(first_name) {
     this.setState({first_name});
@@ -37,7 +42,10 @@ class ContactForm extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.setState({ error: null });
+    this.setState({ 
+      error: null, 
+      submitted: true
+    });
     const { first_name, last_name, email, phone, comment } = e.target;
 
     ContactApiService.postContact(
@@ -56,7 +64,7 @@ class ContactForm extends Component {
       })
   }
 
-  render() {
+  renderForm() {
     return (
       <form
         onSubmit={e => this.handleSubmit(e)}
@@ -115,6 +123,22 @@ class ContactForm extends Component {
           Submit
         </button>
       </form>
+    )
+  }
+
+  renderSubmitted() {
+    return (
+      <p>
+        Thank you for submitting your comment!
+      </p>
+    )
+  }
+
+  render() {
+    return (
+      this.state.submitted
+        ? this.renderSubmitted()
+        : this.renderForm()
     )
   }
 }
