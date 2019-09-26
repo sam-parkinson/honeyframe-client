@@ -6,13 +6,21 @@
   min-height: 100vh;
 }
 
+h1, h2, h3 {
+  font-family: "Amaranth", "Verdana", "Helvetica", sans-serif;
+}
+
+p {
+  font-family: "Merriweather", "Garamond", "Times", serif;
+}
+
 section {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
   padding: 5%;
   padding-top: 0;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 ul {
@@ -33,9 +41,13 @@ img {
 }
 
 button {
+  font-family: "Merriweather Sans", "Helvetica", sans-serif;
+  font-size: 20px;
   border: 2px #3A4800 solid;
   background-color: #C4F600;
   color: #B12500;
+  height: 50px;
+  width: 80px;
 }
 
 button:hover, button:focus {

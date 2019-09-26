@@ -4,6 +4,7 @@
 }
 
 .storeList li {
+  font-family: "Merriweather", "Garamond", "Times", serif;
   display: block;
   margin: 5px;
   padding: 5px;
@@ -20,5 +21,6 @@
   .storeList li {
     width: 320px;
     height: 320px;
+    margin: 10px;
   }
 }
