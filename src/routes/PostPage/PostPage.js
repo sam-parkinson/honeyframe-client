@@ -3,10 +3,6 @@ import BlogContext from '../../contexts/BlogContext';
 import BlogApiService from '../../services/blog-api-service';
 
 export default class PostPage extends Component {
-  static defaultprops = {
-    match: { params: { post_id: null } }
-  }
-
   static contextType = BlogContext;
 
   componentDidMount() {

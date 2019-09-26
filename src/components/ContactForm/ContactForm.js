@@ -67,6 +67,7 @@ class ContactForm extends Component {
   renderForm() {
     return (
       <form
+        className="contactForm"
         onSubmit={e => this.handleSubmit(e)}
       >
         <p>
@@ -128,7 +129,7 @@ class ContactForm extends Component {
 
   renderSubmitted() {
     return (
-      <>
+      <div className="contactForm" >
         <p>
           Thank you for submitting your comment!
         </p>
@@ -139,7 +140,7 @@ class ContactForm extends Component {
         >
           Home
         </button>
-      </>
+      </div>
     )
   }
 
