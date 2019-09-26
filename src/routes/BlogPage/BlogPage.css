@@ -3,3 +3,7 @@
   padding: 5px;
   border: 2px #3A4800 solid;
 }
+
+.blogList li p {
+  text-align: center;
+}
