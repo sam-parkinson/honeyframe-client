@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import StoreContext from '../../contexts/StoreContext';
 import StoreApiService from '../../services/store-api-service';
 import config from '../../config';
-import SortBar from '../../components/SortBar/SortBar';
 import './StorePage.css'
 
 export default class StorePage extends Component {

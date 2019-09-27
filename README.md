@@ -12,7 +12,9 @@ https://github.com/sam-parkinson/honeyframe-server
 
 ## Screenshots
 
+![About Screen](screenshots/about.PNG)
 
+![Shop Screen](screenshots/store.PNG)
 
 ## Technologies USed
 

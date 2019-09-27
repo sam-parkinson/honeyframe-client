@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import BlogContext from '../../contexts/BlogContext';
 import BlogApiService from '../../services/blog-api-service';
-import SortBar from '../../components/SortBar/SortBar';
 import './BlogPage.css';
 
 export default class BlogPage extends Component {
