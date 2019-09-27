@@ -47,6 +47,7 @@ img {
 
 .appImg {
   width: 400px;
+  max-width: 55%
 }
 
 *:link {
