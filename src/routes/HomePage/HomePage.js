@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-
-/*
-  TODO:
-    Replace generic welcome h2 with wide image
-*/
+import config from '../../config';
 
 export default class HomePage extends Component {
   render () {
@@ -11,7 +7,11 @@ export default class HomePage extends Component {
       <main>
         <h2>Welcome to Honeyframe!</h2>
         <section>
-          <img src="https://picsum.photos/400/200" alt="Placeholder" />
+          <img 
+            className="appImg"
+            src={`${config.API_ENDPOINT}/img/home.jpg`} 
+            alt="Bees at the entrance of a hive" 
+          />
           <h3>Mission Statement</h3>
           <p>
             We are Anytown-based beekeepers with a passion for local honey and hand-crafted beeswax goods! 

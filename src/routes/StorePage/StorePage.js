@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StoreContext from '../../contexts/StoreContext';
 import StoreApiService from '../../services/store-api-service';
+import config from '../../config';
 import SortBar from '../../components/SortBar/SortBar';
 import './StorePage.css'
 
@@ -19,9 +20,10 @@ export default class StorePage extends Component {
     return storeItems.map((item, index) => 
       <li
         key={index}
+        className="storeItem"
       >
         <h3>{item.item_name}</h3>
-        {item.img_url && <img src={item.img_url} alt={item.item_name} />}
+        {item.img_url && <img src={`${config.API_ENDPOINT}/${item.img_url}`} alt={item.item_name} />}
         {item.item_desc && <p>{item.item_desc}</p>}
         {item.date_harvested && <p>Harvest date: {new Date(item.date_harvested).toLocaleDateString()}</p>}
       </li>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import config from '../../config';
 
 export default class AboutPage extends Component {
   render () {
@@ -6,7 +7,11 @@ export default class AboutPage extends Component {
       <main>
         <h2>About Us!</h2>
         <section>
-          <img src="https://picsum.photos/400/200" alt="Placeholder" />
+          <img 
+            className="appImg"
+            src={`${config.API_ENDPOINT}/img/about.jpg`} 
+            alt="Bees at the entrance of a hive" 
+          />
           <h3>History</h3>
           <p>
             We started keeping bees in the spring of 2018 as a hobby both to give us something to do and to help take care of the world around us. 

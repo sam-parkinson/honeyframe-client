@@ -45,6 +45,10 @@ img {
   max-width: 100%;
 }
 
+.appImg {
+  max-width: 400px;
+}
+
 *:link {
   color: #B12500;
 }
