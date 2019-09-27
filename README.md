@@ -12,7 +12,7 @@ https://github.com/sam-parkinson/honeyframe-server
 
 ## Screenshots
 
-![About Screen](screenshots/about.PNG)
+![About Screen](screenshots/home.PNG)
 
 ![Shop Screen](screenshots/store.PNG)
 
