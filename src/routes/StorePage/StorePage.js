@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import StoreItem from '../../components/StoreItem/StoreItem';
 import StoreContext from '../../contexts/StoreContext';
 import StoreApiService from '../../services/store-api-service';
-import config from '../../config';
 import './StorePage.css'
 
 export default class StorePage extends Component {
@@ -17,15 +17,10 @@ export default class StorePage extends Component {
   renderStore() {
     const { storeItems = [] } = this.context;
     return storeItems.map((item, index) => 
-      <li
+      <StoreItem 
         key={index}
-        className="storeItem"
-      >
-        <h3>{item.item_name}</h3>
-        {item.img_url && <img src={`${config.API_ENDPOINT}/${item.img_url}`} alt={item.item_name} />}
-        {item.item_desc && <p>{item.item_desc}</p>}
-        {item.date_harvested && <p>Harvest date: {new Date(item.date_harvested).toLocaleDateString()}</p>}
-      </li>
+        item={item}
+      />
     )
   }
 
@@ -33,7 +28,7 @@ export default class StorePage extends Component {
     return (
       <main>
         <h2>Store</h2>
-        {/* <SortBar /> */}
+        {/* Checkout link goes here */}
         <section>  
           <ul className='storeList'>
             {this.renderStore()}
