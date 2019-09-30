@@ -10,6 +10,10 @@ export default class StoreItem extends Component {
     item: {},
   }
 
+  addToCart = (item) => {
+    this.context.addItemToCart(item);
+  }
+
   render() {
     const item = this.props.item;
     return (
@@ -20,7 +24,11 @@ export default class StoreItem extends Component {
         {item.img_url && <img src={`${config.API_ENDPOINT}/${item.img_url}`} alt={item.item_name} />}
         {item.item_desc && <p>{item.item_desc}</p>}
         {item.date_harvested && <p>Harvest date: {new Date(item.date_harvested).toLocaleDateString()}</p>}
-        {/* Add item to cart from here */}
+        <button
+          onClick={() => this.addToCart(item)}
+        >
+          Add to Cart
+        </button>
       </li>
     )
   }

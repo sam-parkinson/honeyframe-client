@@ -18,11 +18,19 @@ export class CartProvider extends Component {
     totalPrice: null,
   }
 
+  addItemToCart = (item) => {
+    const newCart = this.state.cartItems.concat(item)
+    this.setState({
+      cartItems: newCart,
+    });
+  }
+
   render() {
     const value = {
       cartItems: this.state.cartItems,
       totalPrice: this.state.totalPrice,
-      error: this.state.error
+      error: this.state.error,
+      addItemToCart: this.addItemToCart,
     }
 
     return (
