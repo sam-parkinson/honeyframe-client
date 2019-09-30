@@ -6,6 +6,7 @@ const CartContext = React.createContext({
   error: null,
   emptyCart: () => {},
   addItemToCart: () => {},
+  updateTotalPrice: () => {},
   setError: () => {},
   clearError: () => {},
 });
@@ -22,6 +23,16 @@ export class CartProvider extends Component {
     const newCart = this.state.cartItems.concat(item)
     this.setState({
       cartItems: newCart,
+    })
+    this.updateTotalPrice(item.price)
+  }
+
+  updateTotalPrice = (price) => {
+    const newAmt = this.state.totalPrice 
+    ? this.state.totalPrice + parseFloat(price)
+    : parseFloat(price)
+    this.setState({
+      totalPrice: newAmt,
     });
   }
 
@@ -31,6 +42,7 @@ export class CartProvider extends Component {
       totalPrice: this.state.totalPrice,
       error: this.state.error,
       addItemToCart: this.addItemToCart,
+      updateTotalPrice: this.updateTotalPrice,
     }
 
     return (
