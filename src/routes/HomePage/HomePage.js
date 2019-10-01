@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import config from '../../config';
 
 export default class HomePage extends Component {
@@ -17,6 +18,13 @@ export default class HomePage extends Component {
             We are Anytown-based beekeepers with a passion for local honey and hand-crafted beeswax goods! 
             We strive to make our town a more beautiful place by providing a home for nature’s pollinators to do their work, 
             while providing you with delicious honey made from wild flowers as well as beeswax and raw comb!
+          </p>
+          <p>
+            <Link
+              to={'/login'}
+            >
+              Admin Login
+            </Link>
           </p>
         </section>
       </main>

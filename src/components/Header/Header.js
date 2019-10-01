@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import Nav from '../Nav/Nav';
 import './Header.css';
 
-/* 
-  TODO: h1 or h1 section links back to home page
-*/
-
 export default class Header extends Component {
   render() {
     return (
