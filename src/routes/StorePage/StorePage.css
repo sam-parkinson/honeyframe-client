@@ -19,8 +19,14 @@
   height: 100px;
 }
 
-.storeItem button {
+.storeItem button, .checkoutButton {
   width: 140px;
+}
+
+.checkoutButton {
+  height: 30px;
+  margin: 30px;
+  font-family: "Merriweather Sans", "Helvetica", sans-serif;
 }
 
 @media screen and (min-width: 680px) {

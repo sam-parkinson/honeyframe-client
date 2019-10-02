@@ -1,0 +1,12 @@
+.cart p {
+  text-align: center;
+}
+
+.cartList li {
+  display: block;
+}
+
+.cartList li p {
+  text-align: center;
+  font-family: "Merriweather", "Garamond", "Times", serif;
+}

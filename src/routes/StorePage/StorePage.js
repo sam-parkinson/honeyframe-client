@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import StoreItem from '../../components/StoreItem/StoreItem';
 import Cart from '../../components/Cart/Cart';
 import StoreContext from '../../contexts/StoreContext';
@@ -34,15 +33,8 @@ export default class StorePage extends Component {
           <ul className='storeList'>
             {this.renderStore()}
           </ul>
-        </section>
-        <h2>
-          <Link
-            to={'/checkout'}
-          >
-            Check out!
-          </Link>
-        </h2>
-        <Cart />
+        </section>        
+        <Cart />        
       </main>
     )
   }

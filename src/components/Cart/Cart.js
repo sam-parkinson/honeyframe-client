@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Checkout from '../Checkout/Checkout';
 import CartContext from '../../contexts/CartContext';
 import './Cart.css';
 
@@ -20,11 +21,13 @@ export default class Cart extends Component {
 
   render() {
     return (
-      <section>
+      <section className="cart">
+        {this.context.totalPrice && <h2>Cart</h2>}
         {this.context.totalPrice && <p>Total: ${this.context.totalPrice}</p>}
-        <ul>
+        <ul className="cartList">
           {this.renderCart()}
         </ul>
+        {this.context.totalPrice && <Checkout />}
       </section>
     )
   }
