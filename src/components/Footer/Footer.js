@@ -15,7 +15,7 @@ export default class Footer extends Component {
         </ul>
         <span>
           <Link
-            to={'/contact'}
+            to={'/store'}
           >
             Order now!
           </Link>

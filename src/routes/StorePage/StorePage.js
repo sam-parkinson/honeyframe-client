@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import StoreItem from '../../components/StoreItem/StoreItem';
+import Cart from '../../components/Cart/Cart';
 import StoreContext from '../../contexts/StoreContext';
 import StoreApiService from '../../services/store-api-service';
 import './StorePage.css'
@@ -28,12 +30,19 @@ export default class StorePage extends Component {
     return (
       <main>
         <h2>Store</h2>
-        {/* Checkout link goes here */}
         <section>  
           <ul className='storeList'>
             {this.renderStore()}
           </ul>
         </section>
+        <h2>
+          <Link
+            to={'/checkout'}
+          >
+            Check out!
+          </Link>
+        </h2>
+        <Cart />
       </main>
     )
   }
