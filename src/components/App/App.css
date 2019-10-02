@@ -27,6 +27,10 @@ p {
   text-align: left;
 }
 
+span {
+  font-family: "Merriweather Sans", "Helvetica", sans-serif;
+}
+
 section {
   margin: 0;
   margin-left: auto;

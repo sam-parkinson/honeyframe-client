@@ -11,6 +11,7 @@ import BlogPage from '../../routes/BlogPage/BlogPage';
 import PostPage from '../../routes/PostPage/PostPage';
 import ContactPage from '../../routes/ContactPage/ContactPage';
 import LoginPage from '../../routes/LoginPage/LoginPage';
+import AdminPage from '../../routes/AdminPage/AdminPage';
 import TokenService from '../../services/token-service';
 import AuthApiService from '../../services/auth-api-service';
 import IdleService from '../../services/idle-service'
@@ -83,6 +84,7 @@ class App extends Component {
           />
           <PrivateRoute 
             path={'/admin'}
+            component={AdminPage}
           />
         </Switch>
         <Footer />

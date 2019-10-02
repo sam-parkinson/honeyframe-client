@@ -19,13 +19,14 @@ export default class HomePage extends Component {
             We strive to make our town a more beautiful place by providing a home for nature’s pollinators to do their work, 
             while providing you with delicious honey made from wild flowers as well as beeswax and raw comb!
           </p>
-          <p>
+          <br />
+          <span>
             <Link
               to={'/login'}
             >
               Admin Login
             </Link>
-          </p>
+          </span>
         </section>
       </main>
     )

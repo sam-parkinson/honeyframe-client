@@ -1,0 +1,12 @@
+.blogForm input, .blogForm textarea {
+  border: 2px #3A4800 solid;
+  text-align: left;
+}
+
+input:focus, textarea:focus {
+  border: 2px #FF3500 solid;
+}
+
+.blogForm * {
+  text-align: center;
+}
