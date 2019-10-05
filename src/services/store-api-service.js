@@ -17,11 +17,11 @@ const StoreApiService = {
       },
       body: JSON.stringify({token: token})
     })
-    /* .then(res =>
+    .then(res =>
       (!res.ok) 
         ? res.json().then(e => Promise.reject(e))
         : res.json()   
-    ) */
+    )
   }
 };
 

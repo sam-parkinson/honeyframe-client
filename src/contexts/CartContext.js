@@ -36,6 +36,13 @@ export class CartProvider extends Component {
     });
   }
 
+  emptyCart = () => {
+    this.setState({
+      cartItems: [],
+      totalPrice: null,
+    });
+  }
+
   render() {
     const value = {
       cartItems: this.state.cartItems,
@@ -43,6 +50,7 @@ export class CartProvider extends Component {
       error: this.state.error,
       addItemToCart: this.addItemToCart,
       updateTotalPrice: this.updateTotalPrice,
+      emptyCart: this.emptyCart,
     }
 
     return (

@@ -5,7 +5,7 @@ import StoreApiService from '../../services/store-api-service';
 import config from '../../config';
 
 
-export default class CheckoutPage extends Component {
+export default class Checkout extends Component {
   static contextType = CartContext
 
   onToken = (token) => {
@@ -13,7 +13,10 @@ export default class CheckoutPage extends Component {
       amount: this.context.totalPrice * 100,
       token: token
     }
-    StoreApiService.postToken(body);
+    StoreApiService.postToken(body)
+      .then(() =>
+        this.context.emptyCart()
+      )
   }
 
   render() {
