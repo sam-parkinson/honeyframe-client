@@ -18,7 +18,7 @@ https://github.com/sam-parkinson/honeyframe-server
 
 ## Technologies USed
 
-React, HTML, CSS, JavaScript
+React, HTML, CSS, JavaScript, Stripe API, Stripe Checkout
 
 ## Image Credits
 
