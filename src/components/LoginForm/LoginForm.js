@@ -46,6 +46,7 @@ export default class LoginForm extends Component {
             required
             name='user_name'
             id='user_name'
+            placeholder='beekeeper'
           />
         </p>
         <p>
@@ -58,6 +59,7 @@ export default class LoginForm extends Component {
             name='password'
             type='password'
             id='password'
+            placeholder='testpassword'
           />
         </p>
         <button type='submit'>
