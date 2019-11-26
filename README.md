@@ -22,9 +22,7 @@ React, HTML, CSS, JavaScript, Stripe API, Stripe Checkout
 
 ## Demo Information
 
-To test the admin page and blog posting function, please use the values provided as placeholders on the demo page:
-  - Username: beekeeper
-  - Password: testpassword
+To test the admin page and blog posting function, please contact me.
 
 To process test payments via the Stripe API, please use the following as test values:
   - Card number: 4242 4242 4242 4242
